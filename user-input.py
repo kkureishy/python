@@ -22,5 +22,5 @@ clothingPercent = clothing/total *100
 debtPercent = debt/total *100
 #the percentage of the total budget spent in each category
 print("The percentage of the total budget spent in each category.")
-print("\tHousing: " + str(housingPercent) + "%\n\tUtilities: " + str(utilitiesPercent) + "%\n\tGroceries: " + str(groceriesPercent) + "%\n\tTransportation: " + str(transportationPercent) + "%")
-print("\tHealth Care: " + str(healthCarePercent) + "%\n\tPersonal Care: " + str(personalCarePercent) + "%\n\tClothing: " + str(clothingPercent) + "%\n\tDebt: " + str(debtPercent) + "%")
+print(f"\tHousing: {housingPercent}%\n\tUtilities: {utilitiesPercent}%\n\tGroceries: {groceriesPercent}%\n\tTransportation: {transportationPercent}%")
+print(f"\tHealth Care: {healthCarePercent}%\n\tPersonal Care: {personalCarePercent}%\n\tClothing: {clothingPercent}%\n\tDebt: {debtPercent}%")
