@@ -7,7 +7,7 @@ print("")
 #set input variable to 1 because 0 would cause while loop to end
 choice = 1
 #while choice != 0: #while choice not 0 user inputs a number to purchase a ticket seat
-for x in range(len(available)):
+while choice != 0:
     choice = int(input("Select a seat by entering its number.\nTo finish purchase enter 0.\nEnter number: ")) #user imputs seat number
     i=choice
     if choice == 0:
