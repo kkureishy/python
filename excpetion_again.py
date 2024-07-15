@@ -9,12 +9,22 @@ def input_number(i):
             raise NotNumericError("Not numeric error occurred")    
 
 # user trys to input number
-try:
-     inp = (input("Enter a number: "))
-     input_number(inp)
-#if not numeric let user know
-except NotNumericError as e:
-    print(f"Caught an error: {e.message}")
-#at the end lend user know the program is over
-finally:
-     print("Execution completed.")
+x = 0
+while x == 0:
+    try:
+        inp = (input("Enter a number: "))
+        input_number(inp)
+    #if not numeric let user know
+    except NotNumericError as e:
+        print(f"Caught an error: {e.message}")
+        pass
+    #at the end lend user know the program is over
+    else:
+         print(f"{inp}")
+         x =2
+    finally:
+        if x ==0:
+             pass
+        else:
+            print("Execution completed.")
+            break
